@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Information data</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <table>
+            <tr>
+                <th>Interview Purpose</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Interviewer</th>
+                <th>Interviewee</th>
+                <th>Email</th>
+                <th>Phone NO</th>
+                <th>Date</th>
+                <th>Generate ID</th>
+            </tr>
+        <% for(let i=0; i<data.length; i++) { %>
+            <tr>
+                <% if (data[i].purpose === 'Visa') { %>
+                    <td id="visa"><%= data[i].purpose %></td>
+                <% } %>
+                <% if (data[i].purpose === 'Permanent Residence') { %>
+                    <td id="purpose"><%= data[i].purpose %></td>
+                <% } %>
+
+                <td><%= data[i].city %></td>
+                <td><%= data[i].address %></td>
+                <td><%= data[i].interviewer %></td>
+                <td><%= data[i].interviewee %></td>
+                <td><%= data[i].email %></td>
+                <td><%= data[i].phone %></td>
+                <td><%= data[i].date %></td>
+                <td><%= data[i].randomfield %></td>
+            </tr>
+        <% } %>
+    </table>
+    <div class="nav-link">
+        <a href="/">Go To Interview Form</a>
+    </div>
+</body>
+</html>

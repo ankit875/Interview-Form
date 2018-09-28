@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interview Form</title>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <h1>Interview Form</h1>
+    <div>
+        <form name="interview" action="/submit" method="POST"> 
+            <ul>
+                <li><label for="interview">Interview Purpose: </label>
+                    <select name="purpose">
+                        <option value="Visa" >Visa</option>
+                        <option value="Permanent Residence">Permanent Residence</option>
+                    </select>
+                </li>
+                <li><label for="city">City: </label>
+                    <select name="city" id= "city">
+                        <option value="London">London</option>
+                        <option value="Brighton">Brighton</option>
+                        <option value="Belfast">Belfast</option>
+                        <option value="Cardiff">Cardiff</option>
+                        <option value="Newcastle">Newcastle </option>
+                        <option value="Elsewhere" >Elsewhere</option>  
+                    </select>
+                    <li style= "display:none;" id= "custom-city"> 
+                            <input type="text" name="otherCity" >                    
+                    </li>
+                </li>
+                <li>
+                    <label for="address" class="address">Address:</label>
+                    <textarea  name="address" required ></textarea>
+                </li>  
+                <li>
+                    <label for="interviewer">Interviewer: </label>
+                    <input type="text" name="interviewer" required>
+                </li>
+                <li>
+                    <label for="interviewee">Interviewee: </label>
+                    <input type="text" name="interviewee" required>
+                </li>
+                <li>
+                    <label for="email">Interviewee's email: </label>
+                    <input type="email" name="email" id= "email" required>
+                </li>
+                <li>
+                    <label for="phone">Interviewee's phone number: </label>
+                    <input type="number" name="phone" id="phoneno" required>
+                </li><br>
+                <li>
+                    <label for="date">Date: </label>
+                    <input type="date" name="date" required>
+                </li>
+                <li>
+                    
+                    <label for="id">Unique interview ID: </label>
+                    <input type="text" id="generateid" name="randomfield"> 
+                    <input type="button" value="Generate ID" id="id" required>
+                </li>
+                <li>
+                    <input type="submit" id='submit'>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="nav-link">
+        <a href="/data">See All Interview List</a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

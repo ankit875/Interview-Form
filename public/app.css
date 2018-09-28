@@ -1,0 +1,61 @@
+html{
+    background-color: #f9f9f9;
+}
+h1{
+    margin-left: 70px;
+}
+form li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+form ul li label{
+    float: left;
+    width: 200px;
+    text-align: left;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+form ul li input, select, textarea{
+    margin-bottom: 10px;
+    resize: none
+}
+[type="submit"]{
+    margin: 20px 0 0 230px;
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+}
+#custom-city{
+    margin-left: 210px;
+}
+#visa{
+    /* background-color: yellow; */
+    font-display: inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+#purpose{
+    /* background-color: orange; */
+    font-display: initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid green;
+}
+table th,td{
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid green;
+    border-collapse: collapse;
+  }
+.nav-link{
+    margin-top: 20px;
+}
+.nav-link a{
+    padding: 5px;
+    color: #333;
+}
